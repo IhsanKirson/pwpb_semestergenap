@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/colorAccent"
+    tools:context=".FormActivity">
+
+    <TextView
+        android:id="@+id/txtNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="NIM"
+        android:labelFor="@+id/edtNim"/>
+
+    <EditText
+        android:id="@+id/edtNim"
+        android:theme="@style/AppTheme.FormInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNim"
+        android:drawableStart="@drawable/ic_baseline_edit_24"
+        android:drawablePadding="4dp"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtNim"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:theme="@style/AppTheme.FormInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:drawableStart="@drawable/ic_baseline_people_alt_24"
+        android:drawablePadding="4dp"/>
+
+    <TextView
+        android:id="@+id/txtTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtName"
+        android:text="Tanggal Lahir" />
+
+    <EditText
+        android:id="@+id/edtTgl"
+        android:theme="@style/AppTheme.FormInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTgl"
+        android:hint="1996-07-11"
+        android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="4dp"/>
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:theme="@style/AppTheme.FormInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtTgl"
+        android:text="Jenis Kelamin" />
+
+    <EditText
+        android:id="@+id/edtGender"
+        android:theme="@style/AppTheme.FormInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGender"
+        android:hint="L atau P"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="4dp"/>
+
+    <TextView
+        android:id="@+id/txtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtGender"
+        android:text="Alamat" />
+
+    <EditText
+        android:id="@+id/edtAlamat"
+        android:theme="@style/AppTheme.FormInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlamat"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="4dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:paddingHorizontal="14dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:drawablePadding="4dp"
+        android:textColor="@color/red_500"
+        android:background="@color/colorAccent"
+        android:text="simpan"
+        style="?android:attr/borderlessButtonStyle" />
+
+</RelativeLayout>

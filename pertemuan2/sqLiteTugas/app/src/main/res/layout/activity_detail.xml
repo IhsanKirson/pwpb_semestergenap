@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/imgcontainer"
+        app:cardCornerRadius="160dp"
+        app:cardBackgroundColor="@color/colorLogo">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:padding="10dp"
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imgcontainer"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="NIM"/>
+
+    <TextView
+        android:id="@+id/valNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNim"
+        android:paddingLeft="24dp"
+        android:gravity="bottom"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_800"
+        android:layout_below="@id/valNim"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/valNim"
+        android:drawableLeft="@drawable/ic_baseline_people_alt_24"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="Nama"/>
+
+    <TextView
+        android:id="@+id/valName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:paddingLeft="24dp"
+        android:gravity="bottom"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_800"
+        android:layout_below="@id/valName"/>
+
+    <TextView
+        android:id="@+id/txtTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/valName"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="Tanggal Lahir"/>
+
+    <TextView
+        android:id="@+id/valTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTgl"
+        android:paddingLeft="24dp"
+        android:gravity="bottom"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_800"
+        android:layout_below="@id/valTgl"/>
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/valTgl"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="Jenis Kelamin"/>
+
+    <TextView
+        android:id="@+id/valGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGender"
+        android:paddingLeft="24dp"
+        android:gravity="bottom"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_800"
+        android:layout_below="@id/valGender"/>
+
+    <TextView
+        android:id="@+id/txtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/valGender"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="Alamat"/>
+
+    <TextView
+        android:id="@+id/valAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlamat"
+        android:paddingLeft="24dp"
+        android:gravity="bottom"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_800"
+        android:layout_below="@id/valAlamat"/>
+
+</RelativeLayout>
