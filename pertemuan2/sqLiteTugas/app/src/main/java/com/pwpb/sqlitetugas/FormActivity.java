@@ -21,6 +21,8 @@ public class FormActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("Input Data");
 
         initView();
@@ -38,6 +40,7 @@ public class FormActivity extends AppCompatActivity implements View.OnClickListe
 
         edit = intent.getBooleanExtra("edit", false);
         if (edit) {
+            getSupportActionBar().setTitle("Update Data");
             passedInfo = (HashMap<String, String>) intent.getSerializableExtra("passedInfo");
 
             inputNim.setText(passedInfo.get("nim"));
