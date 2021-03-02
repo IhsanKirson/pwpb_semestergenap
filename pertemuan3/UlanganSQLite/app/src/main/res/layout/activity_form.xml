@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/colorAccent"
+    tools:context=".FormActivity">
+
+    <LinearLayout
+        android:id="@+id/contentWrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="24dp">
+        <TextView
+            android:id="@+id/ctxtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Judul"
+            android:textSize="16sp"
+            android:labelFor="@+id/edtTitle"/>
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:focusable="true"
+            android:theme="@style/AppTheme.FormInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"/>
+        <TextView
+            android:id="@+id/ctxtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Description"
+            android:textSize="16sp"
+            android:labelFor="@+id/edtTitle"/>
+
+        <EditText
+            android:id="@+id/edtDesc"
+            android:theme="@style/AppTheme.FormInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:layout_below="@+id/contentWrap"
+        android:text="Submit"
+        android:textSize="18sp"/>
+</RelativeLayout>
